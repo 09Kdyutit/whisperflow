@@ -1,0 +1,20 @@
+# NOTE: mlx-whisper itself is installed separately with --no-deps (see run.sh).
+# Its declared torch dependency is only used for converting original OpenAI
+# checkpoints — WhisperFlow never does that, and skipping torch saves ~600 MB.
+# Everything mlx-whisper actually needs at runtime is listed here explicitly:
+mlx>=0.22
+numba
+numpy
+scipy
+tiktoken
+huggingface_hub
+tqdm
+more-itertools
+
+# WhisperFlow's own dependencies:
+sounddevice>=0.5.1
+pyobjc-core>=10.3
+pyobjc-framework-Cocoa>=10.3
+pyobjc-framework-Quartz>=10.3
+pyobjc-framework-AVFoundation>=10.3
+pyobjc-framework-ApplicationServices>=10.3

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Virtual environment (recreated by run.sh)
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# WhisperFlow runtime data (lives in ~/.whisperflow, never in the repo)
+*.log
+
+# Editor
+.vscode/
+.idea/
+*.swp

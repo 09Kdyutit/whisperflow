@@ -1,5 +1,9 @@
 # WhisperFlow 🎙️
 
+<p align="center">
+  <img src="docs/hero.png" alt="WhisperFlow — local voice dictation for macOS" width="820">
+</p>
+
 **Voice dictation for macOS that runs 100% locally.** Double-tap Shift anywhere,
 speak, tap Shift to finish — your words are transcribed on-device by Whisper
 (Apple MLX) and typed straight into whatever app you're using.
@@ -121,6 +125,22 @@ If Whisper mishears a name or term, add corrections to
   fields block synthetic input by design.)
 - **First dictation is slow** → the model warms up once per launch; later
   dictations are near-instant.
+
+## The interface
+
+WhisperFlow lives in your menu bar. While you dictate, a small pill appears at
+the bottom of the screen — a live waveform (red = recording, orange =
+hands-free) that switches to a pulse while transcribing.
+
+<p align="center">
+  <img src="assets/icon-1024.png" alt="WhisperFlow icon" width="120">
+</p>
+
+Install a Spotlight-launchable app with:
+
+```bash
+./scripts/install-app.sh    # adds WhisperFlow.app (⌘-Space → "WhisperFlow")
+```
 
 ## How it works
 
